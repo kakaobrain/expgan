@@ -1,0 +1,66 @@
+root_dir: ../../
+checkpoint_path: null
+save_dir: ${root_dir}/experiments/accv-submit/
+dataset:
+  data_dir: ${root_dir}/data/FFHQ
+  fn_meta: annots/ffhq_deca_ear_ortho_1217.pkl
+  fn_meta_flip: annots/ffhq_deca_ear_ortho_flipped_0207.json
+  image_size: 256
+dataloader:
+  batch_size: 12
+  num_workers: 6
+model:
+  z_dim: 512
+  w_dim: 256
+  c_dim: 0
+  volume_size: 64
+  pose_dim: 6
+  exp_dim: 53 # expression + jaw
+  shape_dim: 100 # only shape
+  texture_dim: 32
+  stylegan:
+    kernel_size: 3
+    use_noise: false
+  EG3D:
+    hierarchical_sample: true
+    coarse_steps: 24
+    fine_steps: 24
+    face_feature_split: true
+    face_feature_channels: 64 # not necessarily, but same as triplane_decoder_dim
+    fov: 1
+    ray_start: 0.
+    ray_end: 3.
+    perturb: true
+    last_back: true
+    triplane_resolution: 256
+    triplane_decoder_dim: 64
+    triplane_decoder_layers: 2
+  flamedecoder:
+    image_size: 256
+    deca_dir: ${root_dir}/data/DECA
+    deca_cfg: ${root_dir}/models/decalib/utils/config.yaml
+train:
+  max_epochs: 400
+  auxgan_weight: 1
+  lr:
+    base: 0.0001
+    g_decoder: 2.5e-3
+    g_stylegan: 0.002
+    d_auxgan: 0.0002
+    d_stylegan: 0.002
+  use_batch_aug: false
+  optimizer:
+    name: Adam
+  loss:
+    l2_weight: 1
+    adv_weight: 1
+    aux_weight: 1
+    r1_weight: 0.2
+    pose_weight: 15
+    exp_weight: 15
+    shape_weight: 15
+    alpha_weight: 10
+    r1_weight_stylegan: 10
+  progress_refresh_step: 10
+  backend: ddp
+  gpus: -1

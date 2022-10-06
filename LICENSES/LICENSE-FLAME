@@ -1,0 +1,24 @@
+Texture License
+Creative Commons BY-NC-SA 4.0 license
+
+Please read carefully the following terms and conditions and any accompanying documentation before you download and/or use the Texture model, and software (the "Texture"). By downloading and/or using the Texture, you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Texture.
+
+Ownership
+The Texture has been developed at the Max Planck Institute for Intelligent Systems (hereinafter "MPI") and is owned by and proprietary material of the Max-Planck-Gesellschaft zur Förderung der Wissenschaften e.V. (hereinafter “MPG”; MPI and MPG hereinafter collectively “Max-Planck”).
+
+License Grant
+The Texture is under a  Creative Commons BY-NC-SA 4.0 license. Hence, Max-Planck grants you the right to redistribute, and adapt it for non-commercial purposes, as long as you (a) give appropriate credit by citing the relevant papers, (b) indicate any changes that you've made, and (c) distribute any derivative works under the same license.
+
+The Texture may not be used for pornographic purposes or to generate pornographic material whether commercial or not. The Texture may further not be used to create fake, libelous, misleading, or defamatory content of any kind excluding analyses in peer-reviewed scientific research.
+
+Disclaimer of Representations and Warranties
+You expressly acknowledge and agree that the data results from basic research, is provided “AS IS”, may contain errors, and that any use of the data is at your sole risk. MAX-PLANCK MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE DATA, NEITHER EXPRESS NOR IMPLIED, AND THE ABSENCE OF ANY LEGAL OR ACTUAL DEFECTS, WHETHER DISCOVERABLE OR NOT. Specifically, and not to limit the foregoing, Max-Planck makes no representations or warranties (i) regarding the merchantability or fitness for a particular purpose of the data, (ii) that the use of the data will not infringe any patents, copyrights or other intellectual property rights of a third party, and (iii) that the use of the data will not cause any damage of any kind to you or a third party.
+
+Limitation of Liability
+Under no circumstances shall Max-Planck be liable for any incidental, special, indirect or consequential damages arising out of or relating to this license, including but not limited to, any lost profits, business interruption, loss of programs or other data, or all other commercial damages or losses, even if advised of the possibility thereof.
+
+No Maintenance Services
+You understand and agree that Max-Planck is under no obligation to provide either maintenance services, update services, notices of latent defects, or corrections of defects with regard to the data. Max-Planck nevertheless reserves the right to update, modify, or discontinue the data at any time.
+
+Publications using the Data
+If you use the Texture, you agree to cite the FFHQ dataset which was used to build the texture space, and the GitHub repository that describes how the texture space was obtained.

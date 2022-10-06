@@ -1,0 +1,32 @@
+# DECA:
+pretrained_modelpath: ${deca_dir}/data/deca_model.tar
+masking_index: ${deca_dir}/indices_ear_noeye.pkl
+
+model:
+  topology_path: ${deca_dir}/data/head_template.obj
+  # texture data original from http://files.is.tue.mpg.de/tbolkart/FLAME/FLAME_texture_data.zip
+  dense_template_path: ${deca_dir}/data/texture_data_256.npy
+  fixed_displacement_path: ${deca_dir}/data/fixed_displacement_256.npy
+  flame_model_path: ${deca_dir}/data/generic_model.pkl
+  flame_lmk_embedding_path: ${deca_dir}/data/landmark_embedding.npy
+  face_mask_path: ${deca_dir}/data/uv_face_mask.png
+  face_eye_mask_path: ${deca_dir}/data/uv_face_eye_mask.png
+  mean_tex_path: ${deca_dir}/data/mean_texture.jpg
+  tex_path: ${deca_dir}/data/FLAME_albedo_from_BFM.npz
+  tex_type: 'BFM' # BFM, FLAME, albedoMM
+  uv_size: 256
+  param_list: ['shape', 'tex', 'exp', 'pose', 'cam', 'light']
+  n_shape: 100
+  n_tex: 50
+  n_exp: 50
+  n_cam: 3
+  n_pose: 6
+  n_light: 27
+  use_tex: False
+  jaw_type: aa # default use axis angle, another option: euler
+  ## details
+  n_detail: 128
+  max_z: 0.01
+
+dataset:
+  cop: 512
