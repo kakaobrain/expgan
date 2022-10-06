@@ -1,5 +1,7 @@
 # Exp-GAN: 3D-Aware Facial Image Generation with Expression Control
 
+![image](https://user-images.githubusercontent.com/29425882/194230500-ca3f9337-d540-4194-8d96-008d420fde7a.png)
+
 This repository is the official implementation of the ACCV 2022 paper Exp-GAN: 3D-Aware Facial Image Generation with Expression Control
 
 ## Installation
@@ -66,3 +68,6 @@ where `<root_real>` contains downsampled FFHQ images and `<root_fake>` contains 
 ## Demo
 
 Please check `demo.ipynb` to see how to generate some examples by using a pretrained model.
+
+## License
+Copyright (c) 2022 POSTECH, Kookmin University, Kakao Brain Corp. All Rights Reserved. Licensed under the Apache License, Version 2.0 (see [LICENSE](./LICENSE) for details)
