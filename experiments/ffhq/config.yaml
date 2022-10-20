@@ -1,11 +1,12 @@
-root_dir: ../../
+root_dir: ./
 checkpoint_path: null
-save_dir: ${root_dir}/experiments/accv-submit/
+save_dir: ${root_dir}/experiments/ffhq/
 dataset:
   data_dir: ${root_dir}/data/FFHQ
-  fn_meta: annots/ffhq_deca_ear_ortho_1217.pkl
-  fn_meta_flip: annots/ffhq_deca_ear_ortho_flipped_0207.json
+  fn_meta: annots/ffhq_deca_ear_ortho.pkl
+  fn_meta_flip: annots/ffhq_deca_ear_ortho_flipped.json
   image_size: 256
+  # c2w_inverse: False
 dataloader:
   batch_size: 12
   num_workers: 6

@@ -1,0 +1,1 @@
+python ./train.py --cfg ./experiments/ffhq/config.yaml

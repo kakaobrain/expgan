@@ -1,1 +1,0 @@
-python ../../train.py --cfg config.yaml
